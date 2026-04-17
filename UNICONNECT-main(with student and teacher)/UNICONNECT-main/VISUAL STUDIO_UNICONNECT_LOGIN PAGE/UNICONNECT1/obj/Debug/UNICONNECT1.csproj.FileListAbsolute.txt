@@ -1,0 +1,10 @@
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\bin\Debug\UNICONNECT1.exe.config
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\bin\Debug\UNICONNECT1.exe
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\bin\Debug\UNICONNECT1.pdb
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.csproj.AssemblyReference.cache
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.Form1.resources
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.Properties.Resources.resources
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.csproj.GenerateResource.cache
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.csproj.CoreCompileInputs.cache
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.exe
+C:\Users\Allan\source\repos\Lesson 4 Activity\UNICONNECT1\UNICONNECT1\obj\Debug\UNICONNECT1.pdb
