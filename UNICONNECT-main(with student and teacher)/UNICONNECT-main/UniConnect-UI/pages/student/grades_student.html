@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect | Grades</title>
+    <link rel="stylesheet" href="../../css/Main_student.css">
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-wrapper">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="profile-container">
+                <div class="logo-box">
+                    <img src="../../assets/images/LOGO PIC.png" alt="UniConnect" class="sidebar-logo">
+                </div>
+                <div class="user-details">
+                    <p class="user-full-name">Ralph Dainiel Gonzaga</p>
+                    <p class="user-id-number">2024-2-01727</p>
+                </div>
+            </div>
+
+            <nav class="side-nav">
+                <a href="dashboard_student.html" class="nav-link">
+                    <img src="../../assets/icons/DashBoardICON.png" alt="" class="nav-png-icon"> Dashboard
+                </a>
+                <a href="#" class="nav-link active">
+                    <img src="../../assets/icons/YellowGradeICon.png" alt="" class="nav-png-icon"> Grades
+                </a>
+                <a href="announcement_student.html" class="nav-link">
+                    <img src="../../assets/icons/AnnouceICON.png" alt="" class="nav-png-icon"> Announcements
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="main-header">
+                <h1 class="greeting-text">Good Morning, Ralph!</h1>
+                <div class="header-tools">
+                    <div class="notif-wrapper" id="notifBtn">
+                        <img src="../../assets/icons/Notif.png" alt="Notifications" class="header-png-icon">
+                        <span class="count">1</span>
+                        <div class="notif-popup" id="notifPopup">
+                            <div class="notif-header"><h2>Stay Connected!</h2></div>
+                            <div class="notif-scroll-area">
+                                <div class="notif-item">
+                                    <div class="notif-item-header">
+                                        <p class="notif-title">Your grade has been posted!</p>
+                                        <span class="notif-time">13min ago</span>
+                                    </div>
+                                    <p class="notif-sub">DCSN05C - Information Management</p>
+                                    <button class="visit-now-btn" data-link="grades_student.html">VISIT NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="exit-btn">
+                        <img src="../../assets/icons/LOG OUT BUTTON.png" alt="Exit" class="header-png-icon">
+                    </button>
+                </div>
+            </header>
+
+            <section class="grades-container section-shadow">
+                <div class="grades-header-main">
+                    <h2>Subject Grades</h2>
+                    <select class="term-select">
+                        <option>Year 2 Sem 1</option>
+                        <option>Year 2 Sem 2</option>
+                    </select>
+                </div>
+
+                <div class="grades-list-labels">
+                    <div></div> 
+                    <div class="label-credit">Credit</div>
+                    <div class="label-period">
+                        <span>Period</span>
+                        <select class="period-select">
+                            <option>Prelim</option>
+                            <option>Midterm</option>
+                            <option>Final</option>
+                        </select>
+                    </div>
+                    <div class="label-overall">Overall Grade</div>
+                </div>
+
+                <div class="grades-stack">
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>DCSN05C</strong><span>Information Management</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim"></div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>ELECL2C</strong><span>Elective 2 (Web Development)</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>ICTN04C</strong><span>Accounting Information Systems</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">1.75</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>ICTN05C</strong><span>Integrative Programming and Technologies</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>ITEN04C</strong><span>Quantitative Methods</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>ITEN05C</strong><span>Networking 1</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>LWRN01G</strong><span>Life and Works of Rizal</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>PATHFIT4</strong><span>Physical Activities Towards Health & Fitness 4</span></div>
+                        </div>
+                        <div class="val-credit">2</div>
+                        <div class="val-prelim">2.00</div>
+                        <div class="val-overall"></div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="subject-info">
+                            <div class="accent-bar"></div>
+                            <div><strong>STSN11G</strong><span>Science, Technology and Society</span></div>
+                        </div>
+                        <div class="val-credit">3</div>
+                        <div class="val-prelim"></div>
+                        <div class="val-overall"></div>
+                    </div>
+                </div>
+                <div class="grades-footer">
+                    <button class="summary-btn" id="summaryBtn">Grade Summary</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="summary-modal">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-header-info">
+                <div class="header-left">
+                    <h2 id="modalSubjectTitle">Information Management</h2>
+                    <p id="modalSubjectCode">DCSN05C</p>
+                </div>
+                <div class="period-tabs" id="periodTabs">
+                    <button class="tab-btn active" data-period="Prelim">Prelim</button>
+                    <button class="tab-btn" data-period="Midterm">Midterm</button>
+                    <button class="tab-btn" data-period="Finals">Finals</button>
+                </div>
+            </div>
+
+            <div class="modal-grid-container" id="modalGradesContent">
+                <div class="grade-box">
+                    <h3>Class Performance</h3>
+                    <div class="box-content">
+                        <div class="score-row"><span>Assignment 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Assignment 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Seatwork 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Seatwork 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Recitation 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Recitation 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                    </div>
+                    <div class="box-footer"><span>Total Average</span> <div class="avg-input"></div></div>
+                </div>
+
+                <div class="grade-box" id="labExerciseBox">
+                    <h3>Laboratory Exercise</h3>
+                    <div class="box-content">
+                        <div class="score-row"><span>Laboratory 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Laboratory 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Laboratory 3</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Laboratory 4</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                    </div>
+                    <div class="box-footer"><span>Total Average</span> <div class="avg-input"></div></div>
+                </div>
+
+                <div class="grade-box">
+                    <h3>Quizzes</h3>
+                    <div class="box-content">
+                        <div class="score-row"><span>Quiz 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Quiz 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Quiz 3</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                    </div>
+                    <div class="box-footer"><span>Total Average</span> <div class="avg-input"></div></div>
+                </div>
+
+                <div class="grade-box">
+                    <h3>Exams</h3>
+                    <div class="box-content">
+                        <div class="score-row lab-exam-row"><span>Laboratory Exam 1</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row lab-exam-row"><span>Laboratory Exam 2</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                        <div class="score-row"><span>Written Exam</span> <div class="score-input"></div> <div class="total-input"></div></div>
+                    </div>
+                    <div class="box-footer"><span>Total Average</span> <div class="avg-input"></div></div>
+                </div>
+            </div>
+
+            <div class="modal-feedback-box">
+                <h4>Feedback - <span id="instructorName">Janniel P. Macadangdang, MIT</span></h4>
+                <p id="feedbackText">Feedback content goes here...</p>
+            </div>
+            <p class="verification-text">All grades are verified by your teacher.</p>
+        </div>
+
+        <div class="subject-picker-panel" id="subjectPicker">
+            <div class="picker-item active" data-subject="Information Management" data-code="DCSN05C">
+                <div class="radio-circle"></div> <span>Information Management</span>
+            </div>
+            <div class="picker-item" data-subject="Elective 2 (Web Development)" data-code="ELECL2C">
+                <div class="radio-circle"></div> <span>Elective 2 (Web Development)</span>
+            </div>
+            <div class="picker-item" data-subject="Accounting Information Systems" data-code="ICTN04C">
+                <div class="radio-circle"></div> <span>Accounting Information Systems</span>
+            </div>
+            <div class="picker-item" data-subject="Integrative Programming and Technologies" data-code="ICTN05C">
+                <div class="radio-circle"></div> <span>Integrative Programming and Technologies</span>
+            </div>
+            <div class="picker-item" data-subject="Quantitative Methods" data-code="ITEN04C">
+                <div class="radio-circle"></div> <span>Quantitative Methods</span>
+            </div>
+            <div class="picker-item" data-subject="Networking 1" data-code="ITEN05C">
+                <div class="radio-circle"></div> <span>Networking 1</span>
+            </div>
+            <div class="picker-item" data-subject="Life and Works of Rizal" data-code="LWRN01G">
+                <div class="radio-circle"></div> <span>Life and Works of Rizal</span>
+            </div>
+            <div class="picker-item" data-subject="Physical Activities Towards Health & Fitness 4" data-code="PATHFIT4">
+                <div class="radio-circle"></div> <span>Physical Activities Towards Health & Fitness 4</span>
+            </div>
+            <div class="picker-item" data-subject="Science, Technology and Society" data-code="STSN11G">
+                <div class="radio-circle"></div> <span>Science, Technology and Society</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="logoutModal" class="logout-modal-overlay">
+        <div class="logout-card">
+            <h2>Are you sure you want to log out?</h2>
+            <div class="logout-actions">
+                <button id="confirmLogout" class="btn-confirm-logout">LOG OUT</button>
+                <button id="cancelLogout" class="btn-cancel-logout">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const summaryBtn = document.getElementById('summaryBtn');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const closeModal = document.getElementById('closeModal');
+        const modalSubjectTitle = document.getElementById('modalSubjectTitle');
+        const modalSubjectCode = document.getElementById('modalSubjectCode');
+        const periodBtns = document.querySelectorAll('.tab-btn');
+        const pickerItems = document.querySelectorAll('.picker-item');
+        const feedbackText = document.getElementById('feedbackText');
+        const instructorName = document.getElementById('instructorName');
+        const exitBtn = document.querySelector('.exit-btn');
+        const logoutModal = document.getElementById('logoutModal');
+        const confirmLogout = document.getElementById('confirmLogout');
+        const cancelLogout = document.getElementById('cancelLogout');
+        const notifBtn = document.getElementById('notifBtn');
+        const notifPopup = document.getElementById('notifPopup');
+
+        const feedbackData = {
+            "Information Management": { "instructor": "Janniel P. Macadangdang, MIT", "feedback": { "Prelim": "Keep mastering those SQL queries!", "Midterm": "", "Finals": "" } },
+            "Elective 2 (Web Development)": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Accounting Information Systems": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Integrative Programming and Technologies": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Quantitative Methods": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Networking 1": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Life and Works of Rizal": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Physical Activities Towards Health & Fitness 4": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } },
+            "Science, Technology and Society": { "instructor": "Instructor TBD", "feedback": { "Prelim": "", "Midterm": "", "Finals": "" } }
+        };
+
+        const minorSubjects = ["Quantitative Methods", "Life and Works of Rizal", "Physical Activities Towards Health & Fitness 4", "Science, Technology and Society"];
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        notifBtn.addEventListener('click', (e) => { e.stopPropagation(); notifPopup.classList.toggle('active'); });
+        document.addEventListener('click', (e) => { if (!notifBtn.contains(e.target)) notifPopup.classList.remove('active'); });
+        exitBtn.addEventListener('click', () => logoutModal.classList.add('active'));
+        cancelLogout.addEventListener('click', () => logoutModal.classList.remove('active'));
+        confirmLogout.addEventListener('click', () => window.location.href = '../../login.html');
+
+        summaryBtn.addEventListener('click', () => { 
+            modalOverlay.classList.add('active'); 
+            if(sidebar.classList.contains('active')) toggleSidebar();
+            updateGradeContent(); 
+        });
+
+        closeModal.addEventListener('click', () => modalOverlay.classList.remove('active'));
+
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) modalOverlay.classList.remove('active');
+        });
+
+        pickerItems.forEach(item => {
+            item.addEventListener('click', () => {
+                pickerItems.forEach(p => p.classList.remove('active'));
+                item.classList.add('active');
+                modalSubjectTitle.innerText = item.getAttribute('data-subject');
+                modalSubjectCode.innerText = item.getAttribute('data-code');
+                updateGradeContent();
+            });
+        });
+
+        periodBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                periodBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                updateGradeContent();
+            });
+        });
+
+        function updateGradeContent() {
+            const activePeriod = document.querySelector('.tab-btn.active').getAttribute('data-period');
+            const activeSubject = modalSubjectTitle.innerText;
+            const subjectData = feedbackData[activeSubject];
+            const labBox = document.getElementById('labExerciseBox');
+            const labExamRows = document.querySelectorAll('.lab-exam-row');
+
+            if (minorSubjects.includes(activeSubject)) {
+                labBox.style.display = "none";
+                labExamRows.forEach(row => row.style.display = "none");
+            } else {
+                labBox.style.display = "block";
+                labExamRows.forEach(row => row.style.display = "flex");
+            }
+
+            if (subjectData) {
+                instructorName.innerText = subjectData.instructor;
+                feedbackText.innerText = subjectData.feedback[activePeriod] || "No feedback available.";
+            }
+        }
+    </script>
+</body>
+</html>
