@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect | Dashboard</title>
+    <link rel="stylesheet" href="../../css/Main_student.css">
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="main-wrapper">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="profile-container">
+                <div class="logo-box">
+                    <img src="../../assets/images/LOGO PIC.png" alt="UniConnect" class="sidebar-logo">
+                </div>
+                <div class="user-details">
+                    <p class="user-full-name">Ralph Dainiel Gonzaga</p>
+                    <p class="user-id-number">2024-2-01727</p>
+                </div>
+            </div>
+
+            <nav class="side-nav">
+                <a href="#" class="nav-link active">
+                    <img src="../../assets/icons/YellowDashboardICon.png" alt="" class="nav-png-icon"> Dashboard
+                </a>
+                <a href="grades_student.html" class="nav-link">
+                    <img src="../../assets/icons/GradeICON.png" alt="" class="nav-png-icon"> Grades
+                </a>
+                <a href="announcement_student.html" class="nav-link">
+                    <img src="../../assets/icons/AnnouceICON.png" alt="" class="nav-png-icon"> Announcements
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="main-header">
+                <h1 class="greeting-text">Good Morning, Ralph!</h1>
+                <div class="header-tools">
+                    <div class="notif-wrapper" id="notifBtn">
+                        <img src="../../assets/icons/Notif.png" alt="Notifications" class="header-png-icon">
+                        <span class="count">1</span>
+                        
+                        <div class="notif-popup" id="notifPopup">
+                            <div class="notif-header">
+                                <h2>Stay Connected!</h2>
+                            </div>
+                            <div class="notif-scroll-area">
+                                <div class="notif-item">
+                                    <div class="notif-item-header">
+                                        <p class="notif-title">Your grade has been posted!</p>
+                                        <span class="notif-time">13min ago</span>
+                                    </div>
+                                    <p class="notif-sub">DCSN05C - Information Management</p>
+                                    <p class="notif-body">Your outstanding prelim results are a direct testament to your hard work... <span class="see-more">See more...</span></p>
+                                    <button class="visit-now-btn" data-link="grades_student.html">VISIT NOW</button>
+                                </div>
+
+                                <div class="notif-item">
+                                    <div class="notif-item-header">
+                                        <p class="notif-title">Checkout New Annoucement!</p>
+                                        <span class="notif-time">2hr ago</span>
+                                    </div>
+                                    <p class="notif-sub">The Pioneer Updates</p>
+                                    <button class="visit-now-btn" data-link="announcement_student.html">VISIT NOW</button>
+                                </div>
+
+                                <div class="notif-item">
+                                    <div class="notif-item-header">
+                                        <p class="notif-title">Your grade has been posted!</p>
+                                        <span class="notif-time">4hr ago</span>
+                                    </div>
+                                    <p class="notif-sub">ICTN05C - Integrative Programming and Technologies</p>
+                                    <p class="notif-body">You did great this prelim, keep it up doing this, Ralph!... <span class="see-more">See more...</span></p>
+                                    <button class="visit-now-btn" data-link="grades_student.html">VISIT NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="exit-btn">
+                        <img src="../../assets/icons/LOG OUT BUTTON.png" alt="Exit" class="header-png-icon">
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-grid">
+                <div class="left-panel">
+                    <section class="schedule-section section-shadow">
+                        <div class="schedule-header-row">
+                            <div>Monday</div>
+                            <div>Tuesday</div>
+                            <div>Wednesday</div>
+                            <div>Thursday</div>
+                            <div>Friday</div>
+                            <div>Saturday</div>
+                        </div>
+                        <div class="schedule-grid">
+                            <div class="day-col">
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Quantitative Methods</p>
+                                    <p class="time">11:30AM - 1:00PM</p>
+                                    <p class="room">C609</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Rizal</p>
+                                    <p class="time">1:00PM - 2:30PM</p>
+                                    <p class="room">C613</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Science Tech Society</p>
+                                    <p class="time">4:00PM - 5:30PM</p>
+                                    <p class="room">C613</p>
+                                </div>
+                            </div>
+                            <div class="day-col">
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Networking 1</p>
+                                    <p class="time">7:00AM - 10:00AM</p>
+                                    <p class="room">C204</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Accounting Info System</p>
+                                    <p class="time">10:30AM - 12:30PM</p>
+                                    <p class="room">C610</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Integrative Programming</p>
+                                    <p class="time">2:00PM - 4:00PM</p>
+                                    <p class="room">C606</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Information Management</p>
+                                    <p class="time">4:30PM - 7:30PM</p>
+                                    <p class="room">C302</p>
+                                </div>
+                            </div>
+                            <div class="day-col">
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Quantitative Methods</p>
+                                    <p class="time">11:30AM - 1:00PM</p>
+                                    <p class="room">C609</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Rizal</p>
+                                    <p class="time">1:00PM - 2:30PM</p>
+                                    <p class="room">C613</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Science Tech Society</p>
+                                    <p class="time">4:00PM - 5:30PM</p>
+                                    <p class="room">C613</p>
+                                </div>
+                            </div>
+                            <div class="day-col">
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Networking 1</p>
+                                    <p class="time">7:00AM - 10:00AM</p>
+                                    <p class="room">C606</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Accounting Info System</p>
+                                    <p class="time">10:30AM - 12:30PM</p>
+                                    <p class="room">C302</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Integrative Programming</p>
+                                    <p class="time">2:00PM - 4:00PM</p>
+                                    <p class="room">C204</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Information Management</p>
+                                    <p class="time">4:30PM - 7:30PM</p>
+                                    <p class="room">C607</p>
+                                </div>
+                            </div>
+                            <div class="day-col">
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">Pathfit 4</p>
+                                    <p class="time">7:00AM - 9:00AM</p>
+                                    <p class="room">SRD81</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">ELEC 2</p>
+                                    <p class="time">10:00AM - 12:00PM</p>
+                                    <p class="room">C610</p>
+                                </div>
+                                <div class="schedule-card card-shadow">
+                                    <p class="subj">ELEC 2</p>
+                                    <p class="time">1:00PM - 4:00PM</p>
+                                    <p class="room">C302</p>
+                                </div>
+                            </div>
+                            <div class="day-col"></div>
+                        </div>
+                    </section>
+
+                    <section class="feedback-panel section-shadow">
+                        <div class="feedback-header">
+                            <h2>Feedbacks</h2>
+                            <div class="period-selector">
+                                <button class="period-btn active" data-period="prelim">Prelim</button>
+                                <button class="period-btn" data-period="midterm">Midterm</button>
+                                <button class="period-btn" data-period="finals">Finals</button>
+                            </div>
+                        </div>
+                        <div class="feedback-scroll-container">
+                            <div class="feedback-list" id="feedbackList">
+                                <div class="feedback-item card-shadow">
+                                    <div class="fb-top">
+                                        <h3>Networking 1</h3>
+                                        <span>15mins ago</span>
+                                    </div>
+                                    <p>Congratulations on your outstanding performance this prelim season! Your dedication to your studies is clearly reflected in these impressive grades, setting a high standard for the rest of the semester. Keep up the excellent work and continue to aim for academic excellence.</p>
+                                </div>
+                                <div class="feedback-item card-shadow">
+                                    <div class="fb-top">
+                                        <h3>Information Management</h3>
+                                        <span>4hrs ago</span>
+                                    </div>
+                                    <p>Your outstanding prelim results are a direct testament to your hard work, kaya naman ipagpatuloy mo lang ang ganyang dedikasyon. Maintaining this level of academic excellence positions you perfectly for a successful semester ahead, at sigurado kaming malayo ang mararating mo.</p>
+                                </div>
+                                <div class="feedback-item card-shadow placeholder-item">
+                                    <div class="fb-top">
+                                        <h3>Life and Works of Rizal</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="right-panel">
+                    <div class="enrolled-container section-shadow">
+                        <h3>Subjects Enrolled</h3>
+                        <p class="term-tag">Y2S2</p>
+                        <div class="subj-stack">
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>DCSN05C</strong>
+                                    <span>Information Management</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>ELECL2C</strong>
+                                    <span>Elective 2 (Web Development)</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>ICTN04C</strong>
+                                    <span>Accounting Information Systems</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>ICTN05C</strong>
+                                    <span>Integrative Programming and Technologies</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>ITEN04C</strong>
+                                    <span>Quantitative Methods</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>ITEN05C</strong>
+                                    <span>Networking 1</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>LWRN01G</strong>
+                                    <span>Life and Works of Rizal</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>PATHFIT4</strong>
+                                    <span>Physical Activities Towards Health & Fitness 4</span>
+                                </div>
+                            </div>
+                            <div class="subj-row card-shadow">
+                                <div class="accent-bar"></div>
+                                <div class="subj-info">
+                                    <strong>STSN11G</strong>
+                                    <span>Science, Technology and Society</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <div id="logoutModal" class="logout-modal-overlay">
+        <div class="logout-card">
+            <h2>Are you sure you want to log out?</h2>
+            <p>After you log out, your login credentials will not be saved.</p>
+            <div class="logout-actions">
+                <button id="confirmLogout" class="btn-confirm-logout">LOG OUT</button>
+                <button id="cancelLogout" class="btn-cancel-logout">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const feedbackList = document.getElementById('feedbackList');
+        const periodBtns = document.querySelectorAll('.period-btn');
+        const exitBtn = document.querySelector('.exit-btn');
+        const logoutModal = document.getElementById('logoutModal');
+        const confirmLogout = document.getElementById('confirmLogout');
+        const cancelLogout = document.getElementById('cancelLogout');
+        const notifBtn = document.getElementById('notifBtn');
+        const notifPopup = document.getElementById('notifPopup');
+        const visitBtns = document.querySelectorAll('.visit-now-btn');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleSidebar();
+        });
+
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        visitBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                const targetPage = btn.getAttribute('data-link');
+                if (targetPage) {
+                    window.location.href = targetPage;
+                }
+            });
+        });
+
+        notifBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            notifPopup.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!notifBtn.contains(e.target)) {
+                notifPopup.classList.remove('active');
+            }
+        });
+
+        exitBtn.addEventListener('click', () => {
+            logoutModal.classList.add('active');
+        });
+
+        cancelLogout.addEventListener('click', () => {
+            logoutModal.classList.remove('active');
+        });
+
+        confirmLogout.addEventListener('click', () => {
+            window.location.href = '../../login.html';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === logoutModal) {
+                logoutModal.classList.remove('active');
+            }
+        });
+
+        const feedbackData = {
+            prelim: `
+                <div class="feedback-item card-shadow">
+                    <div class="fb-top">
+                        <h3>Networking 1</h3>
+                        <span>15mins ago</span>
+                    </div>
+                    <p>Congratulations on your outstanding performance this prelim season! Your dedication to your studies is clearly reflected in these impressive grades, setting a high standard for the rest of the semester. Keep up the excellent work and continue to aim for academic excellence.</p>
+                </div>
+                <div class="feedback-item card-shadow">
+                    <div class="fb-top">
+                        <h3>Information Management</h3>
+                        <span>4hrs ago</span>
+                    </div>
+                    <p>Your outstanding prelim results are a direct testament to your hard work, kaya naman ipagpatuloy mo lang ang ganyang dedikasyon. Maintaining this level of academic excellence positions you perfectly for a successful semester ahead, at sigurado kaming malayo ang mararating mo.</p>
+                </div>
+                <div class="feedback-item card-shadow placeholder-item">
+                    <div class="fb-top">
+                        <h3>Life and Works of Rizal</h3>
+                    </div>
+                </div>
+            `,
+            midterm: `<p style="text-align:center; padding: 20px; font-weight:600;">No feedback available for Midterm yet.</p>`,
+            finals: `<p style="text-align:center; padding: 20px; font-weight:600;">No feedback available for Finals yet.</p>`
+        };
+
+        periodBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                periodBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const selectedPeriod = btn.getAttribute('data-period');
+                feedbackList.innerHTML = feedbackData[selectedPeriod];
+            });
+        });
+    </script>
+</body>
+</html>

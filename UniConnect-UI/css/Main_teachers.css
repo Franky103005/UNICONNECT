@@ -1,0 +1,206 @@
+/* =========================================
+   GRADES & FEEDBACK SECTION
+========================================= */
+
+.content {
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   DROPDOWN CONTROLS
+========================================= */
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.controls select {
+    padding: 8px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   TABLE STYLING
+========================================= */
+#gradeTable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1400px;
+}
+
+#gradeTable th {
+    background: #650000;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #500000;
+}
+
+#gradeTable td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+
+/* =========================================
+   INPUT BOXES
+========================================= */
+#gradeTable input {
+    width: 55px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+}
+
+#gradeTable input:focus {
+    border-color: #650000;
+}
+
+/* =========================================
+   FEEDBACK BUTTON
+========================================= */
+#gradeTable button {
+    background: #d4b548;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#gradeTable button:hover {
+    opacity: 0.9;
+}
+
+/* =========================================
+   COLUMN COLORS
+========================================= */
+.attendance-col {
+    background: #fef7e0;
+}
+
+.classperf-col {
+    background: #fffdf7;
+}
+
+.lab-col {
+    background: #f9fcff;
+}
+
+.quiz-col {
+    background: #fffafc;
+}
+
+.exam-col {
+    background: #fcfcfc;
+}
+
+.final-col {
+    background: #f5fff5;
+}
+
+/* =========================================
+   ROW HIGHLIGHT
+========================================= */
+.selected-row td {
+    background: #fff4cc !important;
+}
+
+/* =========================================
+   COLUMN HIGHLIGHT
+========================================= */
+.highlight-col {
+    background: #ffe7a8 !important;
+}
+
+/* =========================================
+   MODAL
+========================================= */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.modal-content {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    margin: 10% auto;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-content textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+}
+
+.modal-content button {
+    background: #650000;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-content textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
